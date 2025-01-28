@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna - Restauracja Rodzinna</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header nav a:hover,
+        header nav a:focus {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restauracja Rodzinna</h1>
+        <nav aria-label="Główna nawigacja">
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Galeria</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Witamy w Restauracji Rodzinnej!</h2>
+            <p>Zapraszamy do naszej przytulnej restauracji, gdzie smak domowej kuchni spotyka się z nowoczesnym stylem. 
+            Oferujemy dania przygotowywane z najwyższej jakości składników, idealne na rodzinny obiad, romantyczną kolację czy spotkanie z przyjaciółmi.</p>
+            <p>Przyjdź i poczuj wyjątkową atmosferę oraz smaki, które zostaną z Tobą na długo. Spraw, by każda wizyta stała się niezapomnianym kulinarnym doświadczeniem!</p>
+        </section>
+    </main>
+    <footer>
+        <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
+        <p>Email: <a href="mailto:kontakt@restauracjarodzinna.pl">kontakt@restauracjarodzinna.pl</a></p>
+    </footer>
+</body>
+</html>

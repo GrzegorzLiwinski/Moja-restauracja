@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restauracja Rodzinna</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu-section {
+            padding: 20px;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .menu-item {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menu</h1>
+        <nav aria-label="Główna nawigacja">
+            <a href="index.html">Strona Główna</a>
+            <a href="gallery.html">Galeria</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Zupy -->
+        <section class="menu-section" aria-labelledby="zupy-title">
+            <h2 id="zupy-title">Zupy</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="images/pomidorowa.jpg" alt="Zupa pomidorowa w misce, udekorowana świeżą bazylią">
+                    <h3>Zupa pomidorowa</h3>
+                    <p>Tradycyjna zupa z pomidorów z dodatkiem ryżu.</p>
+                    <p class="price">10 zł</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/gulasz.jpg" alt="Zupa gulaszowa z mięsnymi pulpecikami">
+                    <h3>Zupa gulasz</h3>
+                    <p>Świetna zupa z pulpecikami.</p>
+                    <p class="price">12 zł</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/grzybowa.jpg" alt="Zupa grzybowa udekorowana natką pietruszki">
+                    <h3>Zupa grzybowa</h3>
+                    <p>Aromatyczna zupa z leśnych grzybów.</p>
+                    <p class="price">15 zł</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dania obiadowe -->
+        <section class="menu-section" aria-labelledby="obiady-title">
+            <h2 id="obiady-title">Dania Obiadowe</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="images/schabowy.jpg" alt="Kotlet schabowy z ziemniakami i surówką">
+                    <h3>Kotlet schabowy</h3>
+                    <p>Tradycyjny kotlet z ziemniakami i surówką.</p>
+                    <p class="price">25 zł</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/gołąbki.jpg" alt="Gołąbki z sosem pomidorowym">
+                    <h3>Gołąbki</h3>
+                    <p>Mięso mielone zawinięte w kapustę, podane z sosem pomidorowym.</p>
+                    <p class="price">30 zł</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/pierogi.jpg" alt="Pierogi ruskie na talerzu, posypane cebulką">
+                    <h3>Pierogi ruskie</h3>
+                    <p>Ręcznie lepione pierogi z ziemniaczano-serowym farszem.</p>
+                    <p class="price">20 zł</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desery -->
+        <section class="menu-section" aria-labelledby="desery-title">
+            <h2 id="desery-title">Desery</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="images/szarlotka.jpg" alt="Szarlotka z lodami waniliowymi">
+                    <h3>Szarlotka</h3>
+                    <p>Tradycyjne ciasto jabłkowe z cynamonem.</p>
+                    <p class="price">10 zł</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/sernik.jpg" alt="Sernik udekorowany świeżymi owocami">
+                    <h3>Sernik</h3>
+                    <p>Kremowy sernik na kruchym spodzie.</p>
+                    <p class="price">15 zł</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/lody.jpg" alt="Lody waniliowe polane sosem czekoladowym">
+                    <h3>Lody waniliowe</h3>
+                    <p>Porcja lodów waniliowych z polewą czekoladową.</p>
+                    <p class="price">20 zł</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
+        <p>Email: <a href="mailto:kontakt@restauracjarodzinna.pl">kontakt@restauracjarodzinna.pl</a></p>
+    </footer>
+</body>
+</html>

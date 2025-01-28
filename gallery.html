@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Restauracja Rodzinna</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img:hover,
+        .gallery img:focus {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        .gallery-title {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeria</h1>
+        <nav aria-label="Główna nawigacja">
+            <a href="index.html">Strona Główna</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery" aria-labelledby="gallery-title">
+            <h2 id="gallery-title" class="gallery-title">Nasza Galeria</h2>
+            <img src="images/pexels-betul-carkaci-2148866168-30401142.jpg" alt="Wnętrze restauracji z nowoczesnym wystrojem i zielonymi roślinami">
+            <img src="images/pexels-cristian-rojas-8477228.jpg" alt="Kucharz posypujący solą świeże kawałki mięsa, podczas gotowania na żywo">
+            <img src="images/pexels-isabella-mendes-107313-30417796.jpg" alt="Kieliszki wina ustawione na stole w restauracji z eleganckim wystrojem">
+        </section>
+    </main>
+    <footer>
+        <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
+        <p>Email: <a href="mailto:kontakt@restauracjarodzinna.pl">kontakt@restauracjarodzinna.pl</a></p>
+    </footer>
+</body>
+</html>
